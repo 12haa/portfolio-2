@@ -14,18 +14,18 @@ const Navbar = () => {
           </div>
           Mohammad
         </div>
-        <div className="right flex items-center">
+        <div className="right flex items-center relative">
           <div
-            className={`menu duration-300 flex-col justify-center md:flex-row flex fixed  w-full ${
-              !toggle
-                ? `right-[-100%] top- bottom-0  `
-                : ` right-0 top-0 bottom-0`
-            }  bg-[#282c33]`}
+            className={`menu duration-300 flex-col justify-center md:flex-row flex   lg:h-2 lg:left-[370px] 
+            md:left-[25%] md:top-4
+             fixed    w-full  ${
+               !toggle ? `right-[-100%] top-0    ` : ` right-0 top-0 bottom-0`
+             }  bg-[#282c33]`}
           >
             <a href="#">
-              <li className="text-[#abb2bf] text-[32px] md:text-base my-4 md:my-auto   list-none  mx-4">
+              <li className="text-[#abb2bf] text-[32px] md:text-base my-4 md:my-auto    list-none  mx-4">
                 {" "}
-                <span className="text-[#c77bdd] font-medium">#</span>
+                <span className="text-[#c77bdd] font-medium ">#</span>
                 Home{" "}
               </li>
             </a>
