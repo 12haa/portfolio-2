@@ -24,7 +24,7 @@ const About = () => {
             <img src={Logo} alt="Logo" />
           </div>
           <div className="border flex gap-2 items-center border-[#abb2bf] p-2 text-[#abb2bf]">
-            <div className="w-[16px] h-4 bg-[#c778dd]"></div>
+            <div className="w-[16px] h-4 bg-[#c778dd] rounded-lg"></div>
             <div className="">
               Currently Trying To Get Better{" "}
               <span className="text-white text-bold">Day By Day</span>
@@ -33,7 +33,11 @@ const About = () => {
         </div>
       </div>
       <div className="w-[67%] ml-[142px] px-5 py-10  ">
-        <img className=" relative bottom-10  mx-auto " src={Quote} alt="Quote" />
+        <img
+          className=" relative bottom-10  mx-auto "
+          src={Quote}
+          alt="Quote"
+        />
       </div>
     </>
   );

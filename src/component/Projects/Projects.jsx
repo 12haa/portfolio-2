@@ -1,9 +1,8 @@
 import React from "react";
-
+import Project_Card from "../Projects_Card/Project_Card";
+import dummyData from "../Projects/dummy.jsx";
 const Projects = () => {
-    
-  
-    return (
+  return (
     <>
       <div className="px-5 max-w-[1560px] mx-auto py-10">
         {/* TOP */}
@@ -25,6 +24,19 @@ const Projects = () => {
           </div>
         </div>
         {/* BOTTOM */}
+        <div className="flex justify-between">
+          {dummyData.map(({ img, langs, tittle, disc, id }, i) => {
+            return (
+              <Project_Card
+                img={img}
+                langs={langs}
+                tittle={tittle}
+                disc={disc}
+                key={id}
+              />
+            );
+          })}
+        </div>
       </div>
     </>
   );

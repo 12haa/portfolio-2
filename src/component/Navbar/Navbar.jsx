@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import Logo from "../../assets/Logo.png";
 import Close from "../../assets/close.png";
 const Navbar = () => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
+  useEffect(() => {
+    if (toggle) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {};
+  }, [toggle]);
+
   return (
-    <div className="fixed top-0 left-0 right-0 bg-[#282c33]">
+    <div className="fixed top-0 left-0 right-0 bg-[#282c33] z-[999]">
       <div className=" px-2 max-w-[1560px] mx-auto flex  justify-between  my-2 items-center">
         <div className="left flex gap-2 items-center font-bold text-white text-base">
           {/* Logo */}
@@ -20,8 +30,8 @@ const Navbar = () => {
             md:left-[25%] md:top-4
              fixed   z-10  w-full  ${
                !toggle
-                 ? `right-[-100%] top-0  z-10  `
-                 : ` z-[10] right-0 top-0 bottom-0`
+                 ? `right-[-100%] top-0  z-10   `
+                 : ` z-[199] right-0 top-0 bottom-0 py-4`
              }  bg-[#282c33] `}
           >
             <a href="#">
