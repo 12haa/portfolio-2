@@ -4,7 +4,7 @@ import dummyData from "../Projects/dummy.jsx";
 const Projects = () => {
   return (
     <>
-      <div className="px-5 max-w-[1560px] mx-auto py-10">
+      <div className="px-5 max-w-[1560px] mx-auto py-10   mt-20">
         {/* TOP */}
 
         <div className="flex items-center justify-between  ">
@@ -24,18 +24,23 @@ const Projects = () => {
           </div>
         </div>
         {/* BOTTOM */}
-        <div className="flex justify-between">
-          {dummyData.map(({ img, langs, tittle, disc, id }, i) => {
-            return (
-              <Project_Card
-                img={img}
-                langs={langs}
-                tittle={tittle}
-                disc={disc}
-                key={id}
-              />
-            );
-          })}
+        <div className="flex   flex-wrap justify-between gap-4 my-12">
+          {/* Cards */}
+          {dummyData.map(
+            ({ img, langs, tittle, disc, id, githubUrl, LiveDemoUrl }) => {
+              return (
+                <Project_Card
+                  img={img}
+                  langs={langs}
+                  tittle={tittle}
+                  disc={disc}
+                  key={id}
+                  githubUrl={githubUrl}
+                  LiveDemoUrl={LiveDemoUrl}
+                />
+              );
+            }
+          )}
         </div>
       </div>
     </>

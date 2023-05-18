@@ -4,6 +4,7 @@ import EditedThree from "./images/Edited-three.jpg";
 const Projects = [
   {
     id: 1,
+    githubUrl: "",
     img: EditedOne,
     langs: "Html , Css(Tailwind) , Js(React)",
     tittle: "Porfolio Idea",
@@ -11,14 +12,18 @@ const Projects = [
   },
   {
     id: 2,
-    img:  EditedTwo ,
+    githubUrl: "https://github.com/12haa/Fitclub-Website",
+    LiveDemoUrl: "https://fitclub-website-blush.vercel.app",
+    img: EditedTwo,
     langs: "Html , Css , Js(React)",
     tittle: "FitClub",
     disc: "A Simple Fitclub Website.",
   },
   {
     id: 3,
-    img:  EditedThree ,
+    githubUrl: "https://github.com/12haa/Netflix-APP",
+    LiveDemoUrl: "https://netflix-app-6ry8.vercel.app",
+    img: EditedThree,
     langs: "Html , Css(Tailwind)  , Js(React)",
     tittle: "Simple Netflix Clone",
     disc: "A Movie-App Project With Firebase",
