@@ -18,9 +18,11 @@ const Navbar = () => {
           <div
             className={`menu duration-300 flex-col justify-center md:flex-row flex   lg:h-2 lg:left-[370px] 
             md:left-[25%] md:top-4
-             fixed    w-full  ${
-               !toggle ? `right-[-100%] top-0    ` : ` right-0 top-0 bottom-0`
-             }  bg-[#282c33]`}
+             fixed   z-10  w-full  ${
+               !toggle
+                 ? `right-[-100%] top-0  z-10  `
+                 : ` z-[10] right-0 top-0 bottom-0`
+             }  bg-[#282c33] `}
           >
             <a href="#">
               <li className="text-[#abb2bf] text-[32px] md:text-base my-4 md:my-auto    list-none  mx-4">

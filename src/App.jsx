@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div className=" bg-[#282c33]   ">
       <Navbar />
-      {/* <About /> */}
+      <About />
     </div>
   );
 };
