@@ -19,8 +19,8 @@ const About = () => {
             Contact Me
           </button>
         </div>
-        <div className=" border-2 mx-auto ">
-          <div className="border border-rose-700 ">
+        <div className="  mx-auto ">
+          <div className="  ">
             <img src={Logo} alt="Logo" />
           </div>
           <div className="border flex gap-2 items-center border-[#abb2bf] p-2 text-[#abb2bf]">

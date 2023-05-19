@@ -10,7 +10,7 @@ const Project_Card = ({ img, disc, tittle, langs, githubUrl, LiveDemoUrl }) => {
           <a href={githubUrl} target="_blank">
             <img
               src={githubLogo}
-              className="absolute w-[6%] md:mt-[-105px] lg:top-[244px] lg:right-[6px] lg:w-[9%]  right-3  sm:absolute sm:top-[243px]    cursor-pointer shadow  "
+              className="absolute w-[18px] md:mt-[-105px] lg:top-[244px] lg:right-[6px] lg:w-[9%]  right-3  sm:absolute sm:top-[243px]    cursor-pointer shadow  "
             />
           </a>
           <img src={img} />

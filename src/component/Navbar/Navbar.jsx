@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import Logo from "../../assets/Logo.png";
 import Close from "../../assets/close.png";
+import BrandLogo from "../../assets/brand_logo.jpg";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   useEffect(() => {
