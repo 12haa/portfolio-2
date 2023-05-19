@@ -3,6 +3,7 @@ import "./Navbar.css";
 import Logo from "../../assets/Logo.png";
 import Close from "../../assets/close.png";
 import BrandLogo from "../../assets/brand_logo.jpg";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   useEffect(() => {
@@ -35,35 +36,35 @@ const Navbar = () => {
                  : ` z-[199] right-0 top-0 bottom-0 py-4`
              }  bg-[#282c33] `}
           >
-            <a href="#">
+            <NavLink to="/">
               <li className="text-[#abb2bf] text-[32px] md:text-base my-4 md:my-auto    list-none  mx-4">
                 {" "}
                 <span className="text-[#c77bdd] font-medium ">#</span>
                 Home{" "}
               </li>
-            </a>
-            <a href="#">
+            </NavLink>
+            <NavLink href="/projects ">
               {" "}
               <li className="text-[#abb2bf]  text-[32px] md:text-base  my-4 md:my-auto list-none mx-4">
                 {" "}
                 <span className="text-[#c77bdd] font-medium">#</span>
                 Works{" "}
               </li>
-            </a>
-            <a href="#">
+            </NavLink>
+            <NavLink href="/about">
               <li className="text-[#abb2bf] text-[32px] md:text-base my-4 md:my-auto   mx-4 list-none ">
                 {" "}
                 <span className="text-[#c77bdd] font-medium">#</span>
                 About-Me{" "}
               </li>
-            </a>
-            <a href="#">
+            </NavLink>
+            <NavLink href="/contact">
               <li className="text-[#abb2bf]  text-[32px] md:text-base my-4 md:my-auto  list-none mx-4">
                 {" "}
                 <span className="text-[#c77bdd] font-medium">#</span>
                 Contact-Me{" "}
               </li>
-            </a>
+            </NavLink>
             <div
               onClick={() => setToggle(false)}
               className="close block  absolute w-5 right-3 top-3"
