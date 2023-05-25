@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
 
+import Completed_apss from "../component/Completed-Apps/Completed_apss";
+import Small_projcets from "../component/Small-Projects/Small_projects";
 const Projects_page = () => {
   return (
-    <div>Projects_page</div>
-  )
-}
+    <>
+      <Completed_apss />
+      <Small_projcets />
+    </>
+  );
+};
 
-export default Projects_page
+export default Projects_page;

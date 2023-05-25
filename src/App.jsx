@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter,
+  Route,
+  Router,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 // import AboutSec from "./component/AboutSec/AboutSec";
 // import Contact from "./component/contact_section/Contact";
 // import About from "./component/first_section_about/About";
@@ -15,14 +21,14 @@ const App = () => {
   return (
     <div className=" bg-[#282c33]   ">
       <Navbar />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home_Page />} />
-          <Route path="/" element={<Projects_Page />} />
-          <Route path="/" element={<About_Page />} />
-          <Route path="/" element={<Contact_Page />} />
-        </Routes>
-      </BrowserRouter>
+
+      <Routes>
+        <Route path="/" element={<Home_Page />} />
+        <Route path="/projects" element={<Projects_Page />} />
+        <Route path="/about" element={<About_Page />} />
+        <Route path="/contact" element={<Contact_Page />} />
+      </Routes>
+
       <Footer />
     </div>
   );
