@@ -5,10 +5,12 @@ const Small_projcets = () => {
     {
       tittle: "Languages",
       langs: ["TypeScript", " ,Lua", " ,Python", " ,JavaScript"],
+      isLogo: false,
     },
     {
       tittle: "Databases",
       langs: ["SQLite", " ,PostgreSQL", " ,Mongo"],
+      isLogo: false,
     },
     {
       tittle: "Tools",
@@ -21,10 +23,12 @@ const Small_projcets = () => {
         " ,Arch",
         " ,Git",
       ],
+      isLogo: false,
     },
     {
       tittle: "Other",
       langs: ["HTML", ",CSS", ",EJS", ",SCSS", ",REST", ",Jinja"],
+      isLogo: false,
     },
     {
       tittle: "Frameworks",
@@ -36,6 +40,7 @@ const Small_projcets = () => {
         " , Flask",
         " ,Express.js",
       ],
+      isLogo: false,
     },
     {
       tittle: "Frameworks",
@@ -47,25 +52,29 @@ const Small_projcets = () => {
         " , Flask",
         " ,Express.js",
       ],
+      isLogo: false,
     },
   ];
   return (
     <>
-      <div className="">
+      <div className=" ml-6">
         {/* PROJECTS */}
-        <div className=" text-white font-bold text-[32px]">
+        <div className=" text-white font-bold text-[32px] ">
           <span className="text-[#c778dd]">#</span>
-          <span>Projects</span>
+          <span>Small--Projects</span>
         </div>
         {/* LIST */}
-        <div className="text-white mt-[14px]">List Of My Projects</div>
+        <div className="text-white mt-[14px] text-[18px] ml-1">
+          List Of My <span className="text-[#c778dd]">Simple</span> Projects
+        </div>
       </div>
+      <div className="text-[23px] text-[#c778dd] mt-5  ">-------------------------------------------------------------------------------</div>
       {/* Completed Tasks */}
-      <div className="">
+      <div className=" mt-[-40px] ml-6">
         {/* Title */}
         <div className=" text-white font-medium mt-[68px] mb-[48px] text-[32px]">
           <span className="text-[#c778dd]">#</span>
-          <span>Completed Apps</span>
+          <span>Completed Simple Projects</span>
         </div>
         {/* Projects */}
         <div className="flex flex-wrap  gap-4 my-12 ">

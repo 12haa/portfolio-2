@@ -1,18 +1,28 @@
 import React from "react";
 import githubLogo from "../../assets/github.png";
 import "../../App.css";
-const Project_Card = ({ img, disc, tittle, langs, githubUrl, LiveDemoUrl }) => {
+const Project_Card = ({
+  img,  
+  disc,
+  tittle,
+  langs,
+  githubUrl,
+  LiveDemoUrl,
+  isLogo,
+}) => {
   return (
     <>
       <div className="border   mx-auto w-[90%] md:w-[47%] lg:w-[30%] border-[#abb2bf] p-0">
         {/* Image */}
         <div className="relative   ">
-          <a href={githubUrl} target="_blank">
-            <img
-              src={githubLogo}
-              className="relative w-[18px] md:mt-[-105px] lg:top-[329px] lg:right-[6px] lg:w-[9%]  right-3  sm:absolute sm:top-[243px]    cursor-pointer shadow  "
-            />
-          </a>
+          {isLogo ? (
+            <a href={githubUrl} target="_blank">
+              <img
+                src={githubLogo}
+                className="relative w-[18px] md:mt-[-105px] lg:top-[329px] lg:right-[6px] lg:w-[9%]  right-3  sm:absolute sm:top-[243px]    cursor-pointer shadow  "
+              />
+            </a>
+          ) : null}
           <img src={img} className="w-[100%] " />
         </div>
         {/* Skills */}

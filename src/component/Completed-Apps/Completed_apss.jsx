@@ -8,11 +8,13 @@ const projects = [
     img: first,
     tittle: "Languages",
     langs: ["TypeScript", " ,Lua", " ,Python", " ,JavaScript"],
+    isLogo: true,
   },
   {
     img: second,
     tittle: "Databases",
     langs: ["SQLite", " ,PostgreSQL", " ,Mongo"],
+    isLogo: true,
   },
   {
     img: third,
@@ -26,11 +28,13 @@ const projects = [
       " ,Arch",
       " ,Git",
     ],
+    isLogo: true,
   },
   {
     img: first,
     tittle: "Other",
     langs: ["HTML", ",CSS", ",EJS", ",SCSS", ",REST", ",Jinja"],
+    isLogo: true,
   },
   {
     img: second,
@@ -43,6 +47,7 @@ const projects = [
       " , Flask",
       " ,Express.js",
     ],
+    isLogo: true,
   },
   {
     img: second,
@@ -55,6 +60,7 @@ const projects = [
       " , Flask",
       " ,Express.js",
     ],
+    isLogo: true,
   },
 ];
 const Completed_apss = () => {
@@ -83,9 +89,23 @@ const Completed_apss = () => {
             <div className="flex flex-wrap  gap-4 my-12 ">
               {/* Cards */}
               {projects.map(
-                ({ img, langs, tittle, disc, id, githubUrl, LiveDemoUrl }) => {
+                ({
+                  img,
+                  langs,
+                  tittle,
+                  disc,
+                  id,
+                  githubUrl,
+                  LiveDemoUrl,
+                  isLogo,
+                }) => {
                   return (
-                    <Project_Card img={img} langs={langs} tittle={tittle} />
+                    <Project_Card
+                      img={img}
+                      langs={langs}
+                      tittle={tittle}
+                      isLogo={isLogo}
+                    />
                   );
                 }
               )}
