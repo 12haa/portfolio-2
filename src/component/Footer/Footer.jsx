@@ -17,7 +17,7 @@ const Footer = () => {
               {/* logo */}
               <div className=" flex gap-2 items-center text-2xl text-white font-bold">
                 <img src={Logo} alt="" className="w-9 ml-3  h-10 mt-2 pb-2" />
-                <span>Elias</span>
+                <span>Mohamad</span>
               </div>
               {/* email */}
               <span className="text-[#ABB2BF]">12hadoto@gmail.com</span>
@@ -30,7 +30,9 @@ const Footer = () => {
           {/* right */}
           <div className=" mx-auto md:mx-0">
             {/* title */}
-            <h2 className=" text-white text-2xl font-medium mb-3 ml-5">Media</h2>
+            <h2 className=" text-white text-2xl font-medium mb-3 ml-5">
+              Media
+            </h2>
             {/* media */}
             <div className="flex items-center gap-2 ">
               <a href="#">

@@ -1,8 +1,8 @@
-import ManLogo from "./images/man.png";
+// import ManLogo from "./images/man.png";
 const AboutSec = () => {
   return (
     <>
-      <div className="px-5 max-w-[1560px] mx-auto mt-20 py-10">
+      <div className="px-5 max-w-[1560px] mx-auto  py-10">
         {/* bottom */}
         <div className=" flex-wrap flex items-center justify-between">
           {/* left */}
@@ -42,9 +42,9 @@ const AboutSec = () => {
             </div>
           </div>
           {/* right */}
-          <div className=" mx-auto">
+          {/* <div className=" mx-auto">
             <img className="mx-auto" src={ManLogo} alt="ManLogo" />
-          </div>
+          </div> */}
         </div>
       </div>
     </>
