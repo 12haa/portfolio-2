@@ -43,7 +43,7 @@ const Navbar = () => {
                 Home{" "}
               </li>
             </NavLink>
-            <NavLink href="/projects ">
+            <NavLink to="/projects ">
               {" "}
               <li className="text-[#abb2bf]  text-[32px] md:text-base  my-4 md:my-auto list-none mx-4">
                 {" "}
@@ -51,14 +51,14 @@ const Navbar = () => {
                 Works{" "}
               </li>
             </NavLink>
-            <NavLink href="/about">
+            <NavLink to="/about">
               <li className="text-[#abb2bf] text-[32px] md:text-base my-4 md:my-auto   mx-4 list-none ">
                 {" "}
                 <span className="text-[#c77bdd] font-medium">#</span>
                 About-Me{" "}
               </li>
             </NavLink>
-            <NavLink href="/contact">
+            <NavLink to="/contact">
               <li className="text-[#abb2bf]  text-[32px] md:text-base my-4 md:my-auto  list-none mx-4">
                 {" "}
                 <span className="text-[#c77bdd] font-medium">#</span>

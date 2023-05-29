@@ -1,18 +1,9 @@
 import React from "react";
-import {
-  BrowserRouter,
-  Route,
-  Router,
-  Routes,
-  useLocation,
-} from "react-router-dom";
-// import AboutSec from "./component/AboutSec/AboutSec";
-// import Contact from "./component/contact_section/Contact";
-// import About from "./component/first_section_about/About";
+import { Route, Routes } from "react-router";
+
 import Footer from "./component/Footer/Footer";
 import Navbar from "./component/Navbar/Navbar";
-// import Projects from "./component/Projects/Projects";
-// import Skills from "./component/Skills/SKills";
+
 import About_Page from "./Pages/About_page";
 import Projects_Page from "./Pages/Projects_page";
 import Contact_Page from "./Pages/Contact_page";
