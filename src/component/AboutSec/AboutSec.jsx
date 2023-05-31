@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import Typewriter from "typewriter-effect/dist/core";
 
 // import ManLogo from "./images/man.png";
 const AboutSec = () => {

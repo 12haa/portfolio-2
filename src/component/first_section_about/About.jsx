@@ -4,8 +4,14 @@ import Logo from "../../assets/aboutLogo.png";
 import Quote from "../../assets/quote.png";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
-
+import { Typewriter } from "react-simple-typewriter";
+import Me from "../../assets/Me.png";
 const About = () => {
+  const instance = new Typewriter("#typewriter", {
+    strings: ["Hello", "World"],
+    autoStart: true,
+    loop: true,
+  });
   return (
     <>
       <div className="px-5 max-w-[1560px] mx-auto min-h-screen  flex  items-center justify-between flex-wrap ">
@@ -17,17 +23,38 @@ const About = () => {
             transition={{ type: "twwen ", bounce: 1, delay: 0.1232 }}
             className="font-semibold text-[32px] text-white mb-3  "
           >
-            Im A <span className=" text-[#c778dd]">Web Designer</span> And
-            <span className="text-[#c778dd]"> Front-End Developer</span> {":)"}
+            <span className="">
+              Hello Im <span className="text-[#c778dd]">Mohammad.</span>
+            </span>{" "}
+            <br />
+            I’m An
+            <h2 className="text-[#c778dd]">
+              <Typewriter
+                words={[
+                  "Web Designer",
+                  "Front-End Developer",
+                  "Athlete",
+                  "Gamer",
+                ]}
+                loop={10}
+                cursor
+                cursorStyle="_"
+                typeSpeed={20}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </h2>
+            <span className=" "></span>
+            {}
           </motion.h1>
 
           <motion.p
             animate={{ x: 0 }}
             initial={{ x: -600 }}
             transition={{ type: "twwen ", bounce: 1, delay: 0.6232 }}
-            className="text-[#abb2bf] my-6 "
+            className="text-[#abb2bf] my-6 text-[20px] "
           >
-            I crafts responsive websites where technologies meet creativity
+            I crafts responsive websites where technologies meet creativity.
           </motion.p>
           <NavLink to="contact">
             <motion.button
@@ -41,13 +68,14 @@ const About = () => {
           </NavLink>
         </div>
         <div className="  mx-auto border2 rounded pt-10  ">
-          <div className="  ">
+          <div className=" h-[200px] border-2">
             <motion.img
               animate={{ x: 0 }}
               initial={{ x: 600 }}
               transition={{ type: "twwen ", bounce: 1, delay: 0.3232 }}
-              src={Logo}
+              src={Me}
               alt="Logo"
+              className="h-[1200px]  w-fit absolute top-[-270px] right-[150px]"
             />
           </div>
           <motion.div

@@ -43,7 +43,7 @@ const Skills = () => {
   ];
 
   const handleClicked = (e) => {
-
+    console.log();
     let number = Number(e?.target?.attributes[1]?.value);
 
     setCurrentItem(number);
@@ -80,18 +80,17 @@ const Skills = () => {
             <img className=" w-full mx-auto " src={Shapes} alt="" />
           </motion.div>
           {/* right & mapping */}
-          <motion.div className=" mx-auto border-2 flex justify-around md:justify-end flex-wrap w-10/12 md:w-1/2 gap-4  h-[300px] ">
+          <motion.div className=" mx-auto  flex justify-around md:justify-end flex-wrap w-10/12 md:w-1/2 gap-4  h-[250px] ">
             {skills.map(({ title, languages, id }) => {
               return (
                 <Fragment key={id}>
-                  <motion.div className="w-[90%] sm:w-[45%] lg:w-[30%] border border-[#ABB2BF] hover:bg-[#C778DD] hover:text-black">
+                  <motion.div className="w-[90%] sm:w-[45%] lg:w-[30%] border border-[#ABB2BF] hover:bg-[#876391] hover:text-black">
                     <motion.div className=" p-2" layout>
                       <motion.h2
                         onClick={handleClicked}
                         className=" font-semibold"
                         layout="position"
                         data-active={id}
-                        
                       >
                         {title}
                       </motion.h2>
@@ -101,7 +100,7 @@ const Skills = () => {
                         currentItem === id
                           ? "h-[40px ] opacity-1 "
                           : "h-[-200px] opacity-0"
-                      }   flex gap-2 border-t border-[#ABB2BF] flex-wrap p-2 text-[#CBB2BF] hover:text-black `}
+                      }   flex gap-2 border-t border-[#ABB2BF] flex-wrap p-2 text-[#fff] hover:text-black `}
                       layout="position"
                     >
                       {currentItem === id &&
