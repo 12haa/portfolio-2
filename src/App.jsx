@@ -9,13 +9,13 @@ import Projects_Page from "./Pages/Projects_page";
 import Contact_Page from "./Pages/Contact_page";
 import Home_Page from "./Pages/Home_page";
 import { AnimatePresence } from "framer-motion";
-import { motion } from "framer-motion";
-// import { useScroll } from "framer-motion";
+import { motion } from "framer-motion"
+import { useScroll } from "framer-motion";
 import { useState } from "react";
 
 const App = () => {
-  // const location = useLocation();
-  // const { scrollYProgress } = useScroll();
+  const location = useLocation();
+  const { scrollYProgress } = useScroll();
   // const [completed, setCompleted] = useState(0);
   // const [clicked, setCLicked] = useState();
   // const transition = "width 1s ease-in-out";
@@ -24,7 +24,7 @@ const App = () => {
     <div className=" bg-[#282c33]    ">
       <motion.div
         className="progress-bar"
-        // style={{ scaleX: scrollYProgress }}
+        style={{ scaleX: scrollYProgress }}
       />
       <Navbar />
 
