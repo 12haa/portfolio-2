@@ -4,6 +4,7 @@ import Logo from "../../assets/Logo.png";
 import Close from "../../assets/close.png";
 import BrandLogo from "../../assets/brand_logo.jpg";
 import { NavLink } from "react-router-dom";
+import Progress_bar from "./Progress_bar.jsx";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   useEffect(() => {
@@ -15,9 +16,27 @@ const Navbar = () => {
 
     return () => {};
   }, [toggle]);
+  const [completed, setCompleted] = useState(0);
+  // const [clicked, setClicked] = useState(false);
+  // const [clicked, setClicked] = useState("");
+
+  // useEffect(() => {
+  //   setInterval(
+  //     () => setCompleted(Math.floor(Math.random() * 9999) + 1),
+  //     2000
+  //   );
+
+  //   return () => {};
+  // }, []);
 
   return (
-    <div className="fixed top-0 left-0 right-0 bg-[#282c33] z-[999]">
+    <div className="fixed top-0 left-0 right-0 bg-[#282c33] z-[99999] ">
+      {/* <Progress_bar
+        bgcolor="#c778dd"
+        progress={completed}
+        height={5}
+        completed={completed}
+      /> */}
       <div className=" px-2 max-w-[1560px] mx-auto flex  justify-between  my-2 items-center">
         <div className="left flex gap-2 items-center font-bold text-white text-base">
           {/* Logo */}
@@ -37,7 +56,10 @@ const Navbar = () => {
              }  bg-[#282c33] `}
           >
             <NavLink to="/">
-              <li className="text-[#abb2bf] text-[32px] md:text-base my-4 md:my-auto    list-none  mx-4">
+              <li
+                className="text-[#abb2bf] text-[32px] md:text-base my-4 md:my-auto    list-none  mx-4"
+                onClick={() => setClicked("home")}
+              >
                 {" "}
                 <span className="text-[#c77bdd] font-medium ">#</span>
                 Home{" "}

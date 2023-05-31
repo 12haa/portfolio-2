@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const AboutSec = () => {
   return (
     <>
-      <div className="px-5 max-w-[1560px] mx-auto  py-10">
+      <div className=" px-5 max-w-[1560px] mx-auto  py-10">
         {/* bottom */}
         <div className=" flex-wrap flex items-center justify-between">
           {/* left */}
@@ -19,6 +19,7 @@ const AboutSec = () => {
               </div>
             </div>
             {/* disc */}
+
             <p className="text-[#ABB2BF] ">
               Hello, i’m Mohamad!
               <br />
@@ -39,7 +40,7 @@ const AboutSec = () => {
                 href="#"
                 className=" duration-150 hover:bg-[#C778DD33] border border-[#C778DD] px-4 py-2 text-white "
               >
-                <NavLink to='about'>
+                <NavLink to="/about">
                   <button>Read more -{">"}</button>
                 </NavLink>
               </a>

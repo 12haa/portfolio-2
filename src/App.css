@@ -1,3 +1,16 @@
 .shadow {
   box-shadow: 1.5px 1px 1px 0px rgba(232, 21, 232, 0.66);
 }
+.progress-bar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  height: 1.4px;
+  background: #c778dd;
+  transform-origin: 0%;
+  z-index: 9999;
+}
+.body {
+  zoom: 90%;
+}

@@ -1,11 +1,15 @@
 import React from "react";
 import Contact from "../component/contact_contact_page/Contact";
-
+import { motion } from "framer-motion";
 const Contact_page = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Contact />
-    </div>
+    </motion.div>
   );
 };
 
