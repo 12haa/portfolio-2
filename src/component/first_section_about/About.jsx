@@ -68,14 +68,14 @@ const About = () => {
           </NavLink>
         </div>
         <div className="  mx-auto border2 rounded pt-10  ">
-          <div className=" h-[200px] border-2">
+          <div className=" h-[300px] border-2">
             <motion.img
               animate={{ x: 0 }}
               initial={{ x: 600 }}
               transition={{ type: "twwen ", bounce: 1, delay: 0.3232 }}
               src={Me}
               alt="Logo"
-              className="h-[1200px]  w-fit absolute top-[-270px] right-[150px]"
+              className="object-cover w-[430px] max-h-screen h-[500px] ml-1 mt-3 absolute"
             />
           </div>
           <motion.div
