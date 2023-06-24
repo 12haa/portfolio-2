@@ -165,7 +165,7 @@ const About = () => {
             animate={{ y: 0 }}
             transition={{ type: "spring" , delay:'1.4' }}
             whileInView={{ opacity: 1 }}
-            className=" relative bottom-10  mx-auto  w-[800px]  pt-[px]"
+            className=" relative bottom-10  mx-auto  w-[800px]  ml-[550px]"
             src={Quote}
             alt="Quote"
           />

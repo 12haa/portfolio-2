@@ -22,7 +22,7 @@ const Contact = () => {
         <div className=" flex items-start flex-wrap gap-10 justify-between">
           {/* left */}
           <div className="left w-full md:w-1/2">
-            <p className=" text-[#ABB2BF]">
+            <p className=" text-[#ABB2BF] text-[22px]">
               I’m interested in freelance opportunities. However, if you have
               other request or question, don’t hesitate to contact me
             </p>
@@ -32,12 +32,12 @@ const Contact = () => {
             {/* box */}
             <div className="border border-[#ABB2BF] p-4">
               <h2 className=" mb-4 text-white font-semibold">
-                Message me here
+                Message Me Here 
               </h2>
               {/* get in touch */}
-              <div className="">
+              <div className="text-[20px]">
                 {/* links */}
-                <div className="flex gap-1 items-center">
+                <div className="flex gap-1 items-center text-[20px]">
                   <img src={Discord} alt="" />
                   <span className="text-[#ABB2BF]">!12haa#7566</span>
                 </div>

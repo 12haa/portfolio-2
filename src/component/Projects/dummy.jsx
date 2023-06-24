@@ -5,6 +5,7 @@ const Projects = [
   {
     id: 1,
     githubUrl: "",
+    LiveDemoUrl :"https://3-d-portfolio-khaki.vercel.app/",
     img: EditedOne,
     langs: "Html , Css(Tailwind) , Js(React)",
     tittle: "Porfolio Idea",
