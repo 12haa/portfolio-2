@@ -18,6 +18,7 @@ const Facts = [
   },
   {
     fact: "I don’t have any siblings",
+   
   },
   {
     fact: "My favorite movie is The Green Mile",
@@ -35,7 +36,7 @@ const FunFacts = () => {
           {Facts.map((fact) => {
             return (
               <div className="fact border-[#abb2bf] border p-2 text-[#abb2bf] text-base font-normal h-[55px]  ">
-                {fact.fact}
+                {fact.fact} 
               </div>
             );
           })}

@@ -21,7 +21,7 @@ const AboutSec = () => {
             </div>
             {/* disc */}
 
-            <p className="text-[#ABB2BF] ">
+            <p className="text-[#ABB2BF] text-[20px] ">
               Hello, i’m Mohamad!
               <br />
               <br />
