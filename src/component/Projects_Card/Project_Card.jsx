@@ -9,6 +9,7 @@ const Project_Card = ({
   githubUrl,
   LiveDemoUrl,
   isLogo,
+  Logo,
 }) => {
   return (
     <>
@@ -24,6 +25,12 @@ const Project_Card = ({
             </a>
           ) : null}
           <img src={img} className="w-[100%] h-[300px]" alt="image" />
+          <a href={githubUrl} target="_blank">
+            <img
+              src={Logo}
+              className="w-[6.3%] h-[40px] absolute right-1 top-[260px]"
+            />
+          </a>
         </div>
         {/* Skills */}
         <div className="flex gap-2  flex-wrap p-2 border-y border-[#abb2bf] text-[#abb2bf]">

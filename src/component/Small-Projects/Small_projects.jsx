@@ -1,6 +1,7 @@
 import React from "react";
 import Project_Card from "../Projects_Card/Project_Card";
 import toDo from "../../assets/todo.png";
+import Logo from "../../assets/github.png";
 const Small_projcets = () => {
   const SmallProjects = [
     {
@@ -10,6 +11,7 @@ const Small_projcets = () => {
       img: toDo,
       LiveDemoUrl: "https://to-do-app-smoky-six.vercel.app/",
       githubUrl: "https://github.com/12haa/Simple-ToDo-App/tree/main",
+      gitHubLogo: Logo,
     },
     {
       tittle: "Databases",
@@ -104,7 +106,7 @@ const Small_projcets = () => {
                   LiveDemoUrl={LiveDemoUrl}
                   githubUrl={githubUrl}
                   img={img}
-                  
+                  Logo={Logo}
                 />
               );
             }
