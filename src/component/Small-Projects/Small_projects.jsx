@@ -68,9 +68,11 @@ const Small_projcets = () => {
           List Of My <span className="text-[#c778dd]">Simple</span> Projects
         </div>
       </div>
-      <div className="text-[23px] text-[#c778dd] mt-5  ">-------------------------------------------------------------------------------</div>
+      <div className="text-[23px] text-[#c778dd] mt-5  ">
+        -------------------------------------------------------------------------------
+      </div>
       {/* Completed Tasks */}
-      <div className=" mt-[-40px] ml-6">
+      <div className=" mt-[-40px] ml-4">
         {/* Title */}
         <div className=" text-white font-medium mt-[68px] mb-[48px] text-[32px]">
           <span className="text-[#c778dd]">#</span>
