@@ -2,7 +2,7 @@ import React from "react";
 import githubLogo from "../../assets/github.png";
 import "../../App.css";
 const Project_Card = ({
-  img,  
+  img,
   disc,
   tittle,
   langs,
@@ -23,7 +23,7 @@ const Project_Card = ({
               />
             </a>
           ) : null}
-          <img src={img} className="w-[100%] " />
+          <img src={img} className="w-[100%] h-[300px]" alt="image" />
         </div>
         {/* Skills */}
         <div className="flex gap-2  flex-wrap p-2 border-y border-[#abb2bf] text-[#abb2bf]">

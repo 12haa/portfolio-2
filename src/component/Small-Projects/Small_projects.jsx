@@ -1,11 +1,15 @@
 import React from "react";
 import Project_Card from "../Projects_Card/Project_Card";
+import toDo from "../../assets/todo.png";
 const Small_projcets = () => {
   const SmallProjects = [
     {
       tittle: "Languages",
       langs: ["TypeScript", " ,Lua", " ,Python", " ,JavaScript"],
       isLogo: false,
+      img: toDo,
+      LiveDemoUrl: "https://to-do-app-smoky-six.vercel.app/",
+      githubUrl: "https://github.com/12haa/Simple-ToDo-App/tree/main",
     },
     {
       tittle: "Databases",
@@ -82,8 +86,27 @@ const Small_projcets = () => {
         <div className="flex flex-wrap  gap-4 my-12 ">
           {/* Cards */}
           {SmallProjects.map(
-            ({ img, langs, tittle, disc, id, githubUrl, LiveDemoUrl }) => {
-              return <Project_Card langs={langs} tittle={tittle} />;
+            ({
+              img,
+              langs,
+              tittle,
+              disc,
+              id,
+              githubUrl,
+              LiveDemoUrl,
+              index,
+            }) => {
+              return (
+                <Project_Card
+                  langs={langs}
+                  tittle={tittle}
+                  key={index}
+                  LiveDemoUrl={LiveDemoUrl}
+                  githubUrl={githubUrl}
+                  img={img}
+                  
+                />
+              );
             }
           )}
         </div>

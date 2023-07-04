@@ -88,7 +88,7 @@ const Skills = () => {
                     <motion.div className=" p-2" layout>
                       <motion.h2
                         onClick={handleClicked}
-                        className=" font-semibold"
+                        className=" font-semibold cursor-pointer"
                         layout="position"
                         data-active={id}
                       >
