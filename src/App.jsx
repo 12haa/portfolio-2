@@ -9,10 +9,13 @@ import Projects_Page from "./Pages/Projects_page";
 import Contact_Page from "./Pages/Contact_page";
 import Home_Page from "./Pages/Home_page";
 import { AnimatePresence } from "framer-motion";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import { useScroll } from "framer-motion";
 import { useState } from "react";
+import Preloader from "./component/PreLoader/Preloader";
 
+// import { Circle2 } from "react-preloaders";
+import "./component/PreLoader/preloader.css";
 const App = () => {
   const location = useLocation();
   const { scrollYProgress } = useScroll();
@@ -21,24 +24,28 @@ const App = () => {
   // const transition = "width 1s ease-in-out";
 
   return (
-    <div className=" bg-[#282c33]    ">
-      <motion.div
-        className="progress-bar"
-        style={{ scaleX: scrollYProgress }}
-      />
-      <Navbar />
+    <>
+      <Preloader />
 
-      <AnimatePresence>
-        <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Home_Page />} />
-          <Route path="/projects" element={<Projects_Page />} />
-          <Route path="/about" element={<About_Page />} />
-          <Route path="/contact" element={<Contact_Page />} />
-        </Routes>
-      </AnimatePresence>
+      <div className=" bg-[#282c33]    ">
+        <motion.div
+          className="progress-bar"
+          style={{ scaleX: scrollYProgress }}
+        />
+        <Navbar />
 
-      <Footer />
-    </div>
+        <AnimatePresence>
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home_Page />} />
+            <Route path="/projects" element={<Projects_Page />} />
+            <Route path="/about" element={<About_Page />} />
+            <Route path="/contact" element={<Contact_Page />} />
+          </Routes>
+        </AnimatePresence>
+
+        <Footer />
+      </div>
+    </>
   );
 };
 

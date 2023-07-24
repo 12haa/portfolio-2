@@ -5,7 +5,7 @@ import EditedFour from "./images/EditedFour.png";
 const Projects = [
   {
     id: 1,
-    githubUrl: "",
+    githubUrl: "https://github.com/12haa/3-d-portfolio",
     LiveDemoUrl: "https://3-d-portfolio-khaki.vercel.app/",
     img: EditedOne,
     langs: "Html , Css(Tailwind) , Js(React)",

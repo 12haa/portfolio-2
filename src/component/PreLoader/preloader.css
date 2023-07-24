@@ -1,0 +1,36 @@
+.preloader {
+    height: 120vh;
+    width: 100%;
+    background: #00000093;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    top: 1%;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+}
+
+.preloader .text-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 280px;
+    font-size: 20px;
+    font-weight: 800;
+    overflow: hidden;
+    color: #fff;
+
+
+}
+
+.preloader .text-container>span:nth-child(3) {
+    color: #C778DD;
+}
