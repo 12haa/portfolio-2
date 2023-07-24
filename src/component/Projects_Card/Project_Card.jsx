@@ -1,5 +1,5 @@
-import React from "react";
-import githubLogo from "../../assets/github.png";
+
+import gitLogo from "../../assets/github.png";
 import "../../App.css";
 const Project_Card = ({
   img,
@@ -15,20 +15,22 @@ const Project_Card = ({
     <>
       <div className="border   mx-auto w-[90%] md:w-[47%] lg:w-[30%] border-[#abb2bf] p-0">
         {/* Image */}
-        <div className="relative   ">
+        <div className="relative">
           {isLogo ? (
-            <a href={githubUrl} target="_blank">
+            <a href={githubUrl} target="_blank" rel="noreferrer">
               <img
-                src={githubLogo}
-                className="relative w-[18px] md:mt-[-105px] lg:top-[329px] lg:right-[6px] lg:w-[9%]  right-3  sm:absolute sm:top-[243px]    cursor-pointer shadow  "
+                className="relative w-[18px] md:mt-[-105px] lg:top-[329px] lg:right-[6px] lg:w-[9%]  right-3  sm:absolute sm:top-[243px]     cursor-pointer shadow  "
+                src={gitLogo}
+                alt="githubLogo"
               />
             </a>
           ) : null}
           <img src={img} className="w-[100%] h-[300px]" alt="image" />
-          <a href={githubUrl} target="_blank">
+          <a href={githubUrl} target="_blank" rel="noreferrer">
             <img
-              src={Logo}
-              className="w-[6.3%] h-[40px] absolute right-1 top-[260px]"
+              src={gitLogo}
+              className="w-[6.3%] h-[40px] absolute right-[10px] top-[260px]"
+              alt="GitLogo"
             />
           </a>
         </div>
