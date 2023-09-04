@@ -19,7 +19,7 @@ const About = () => {
           </div>
           {/* disc */}
           <p className="text-[#ABB2BF] ml-10 mt-[-100px] text-[20px] ">
-            Hello, i’m Mohamad!
+            Hello, i’m Lorem!
             <br />
             <br />
             I’m a self-taught front-end developer based in Shiraz, IRAN. I can

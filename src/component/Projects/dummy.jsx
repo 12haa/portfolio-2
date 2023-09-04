@@ -2,42 +2,43 @@ import EditedOne from "./images/Edited-one.jpg";
 import EditedTwo from "./images/Edited-two.jpg";
 import EditedThree from "./images/Edited-three.jpg";
 import EditedFour from "./images/EditedFour.png";
+import Rect from "../../Pages/images/RectangleOne.jpg";
 const Projects = [
   {
     id: 1,
-    githubUrl: "https://github.com/12haa/3-d-portfolio",
-    LiveDemoUrl: "https://3-d-portfolio-khaki.vercel.app/",
-    img: EditedOne,
+    githubUrl: "https://github.com",
+    LiveDemoUrl: "https://vercel.com",
+    img: Rect,
     langs: "Html , Css(Tailwind) , Js(React)",
-    tittle: "Porfolio Idea",
-    disc: " Animated 3D Porfolio",
+    tittle: "Lorem Lorem Lorem Lorem Lorem Lorem",
+    disc: " Lorem Lorem Lorem Lorem Lorem Lorem",
   },
   {
     id: 2,
-    githubUrl: "https://github.com/12haa/Fitclub-Website",
-    LiveDemoUrl: "https://fitclub-website-blush.vercel.app",
-    img: EditedTwo,
+    githubUrl: "https://github.com",
+    LiveDemoUrl: "https://vercel.com",
+    img: Rect,
     langs: "Html , Css , Js(React)",
-    tittle: "FitClub",
-    disc: "A Simple Fitclub Website.",
+    tittle: "Lorem Lorem Lorem Lorem Lorem Lorem",
+    disc: "Lorem Lorem Lorem Lorem Lorem Lorem",
   },
   {
     id: 3,
-    githubUrl: "https://github.com/12haa/Netflix-APP",
-    LiveDemoUrl: "https://netflix-app-6ry8.vercel.app",
-    img: EditedThree,
+    githubUrl: "https://github.com",
+    LiveDemoUrl: "https://vercel.com",
+    img: Rect,
     langs: "Html , Css(Tailwind)  , Js(React)",
-    tittle: "Simple Netflix Clone",
-    disc: "A Movie-App Project With Firebase",
+    tittle: "Lorem Lorem Lorem Lorem Lorem Lorem",
+    disc: "Lorem Lorem Lorem Lorem Lorem Lorem",
   },
   {
     id: 4,
-    githubUrl: "https://github.com/12haa/Chatty",
-    LiveDemoUrl: "https://chatty-gold.vercel.app/login",
-    img: EditedFour,
+    githubUrl: "https://github.com",
+    LiveDemoUrl: "https://vercel.com",
+    img: Rect,
     langs: "Html , scss  , Js(React) , Firebase",
-    tittle: "Realtime ChatApp",
-    disc: "A Realtime Chat-App For Online Chatting",
+    tittle: "Lorem Lorem Lorem Lorem Lorem Lorem",
+    disc: "Lorem Lorem Lorem Lorem Lorem Lorem",
   },
 ];
 export default Projects;

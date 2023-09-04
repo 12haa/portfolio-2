@@ -32,18 +32,18 @@ const Contact = () => {
             {/* box */}
             <div className="border border-[#ABB2BF] p-4">
               <h2 className=" mb-4 text-white font-semibold">
-                Message Me Here 
+                Message Me Here
               </h2>
               {/* get in touch */}
               <div className="text-[20px]">
                 {/* links */}
                 <div className="flex gap-1 items-center text-[20px]">
                   <img src={Discord} alt="" />
-                  <span className="text-[#ABB2BF]">!12haa#7566</span>
+                  <span className="text-[#ABB2BF]">!Lorem#xxxx</span>
                 </div>
                 <div className="flex gap-1 items-center">
                   <img src={Email} alt="" />
-                  <span className="text-[#ABB2BF]">12hadoto@gmail.com</span>
+                  <span className="text-[#ABB2BF]">gmail@gmail.com</span>
                 </div>
                 {/* <div className="flex gap-1 items-center">
                   <a href="https://github.com/12haa " target="_blank">

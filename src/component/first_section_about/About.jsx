@@ -5,7 +5,8 @@ import Quote from "../../assets/quote.png";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
-import Me from "../../assets/Me.png";
+import ManLogo from "../../assets/aboutLogo.png";
+
 import Progress_bar from "../Progress_bar/Progress_bar";
 const About = () => {
   const instance = new Typewriter("#typewriter", {
@@ -17,23 +18,22 @@ const About = () => {
 
   const cardData = [
     {
-      number : 85,
-      lang : 'HTML'
-    }
-    ,{
-      number : '23'
-      ,lang : 'js'
-    }
-    ,{
-      number : '45'
-      ,lang : 'react'
-    } , 
+      number: 85,
+      lang: "HTML",
+    },
     {
-      number :'70'
-      ,lang :'tailwind'
-
-    }
-]
+      number: "23",
+      lang: "js",
+    },
+    {
+      number: "45",
+      lang: "react",
+    },
+    {
+      number: "70",
+      lang: "tailwind",
+    },
+  ];
   return (
     <>
       <div className="px-5 max-w-[1560px] pb-[63px] mx-auto min-h-screen  flex  items-center justify-between flex-wrap ">
@@ -95,9 +95,9 @@ const About = () => {
               animate={{ x: 0 }}
               initial={{ x: 600 }}
               transition={{ type: "twwen ", bounce: 1, delay: 0.3232 }}
-              src={Me}
+              src={ManLogo}
               alt="Logo"
-              className="object-cover w-[430px] max-h-screen h-[500px] ml-1 mt-3 absolute"
+              className="object-cover w-[420px] max-h-screen h-[300px] ml-1  absolute"
             />
           </div>
           <motion.div
@@ -151,10 +151,9 @@ const About = () => {
         </div>
       </div>
       <div className=" relative bottom-[70px] h-[220px] min-w-full justify-center   items-center flex xs:justify-evenly sm:flex-wrap sm:gap-[90px] sm:mt-[100px] xs:flex-wrap  ">
-       {cardData.map((data)=> {
-        return <Progress_bar number= {data.number} langs ={data.lang}  />
-      
-       })}
+        {cardData.map((data) => {
+          return <Progress_bar number={data.number} langs={data.lang} />;
+        })}
       </div>
 
       <div className="w-[67%]  ml-[142px] px-5 py-10  ">
@@ -163,7 +162,7 @@ const About = () => {
             layout
             initial={{ opacity: 0, y: 1000 }}
             animate={{ y: 0 }}
-            transition={{ type: "spring" , delay:'1.4' }}
+            transition={{ type: "spring", delay: "1.4" }}
             whileInView={{ opacity: 1 }}
             className=" relative bottom-10  mx-auto  w-[800px]  ml-[550px]"
             src={Quote}
